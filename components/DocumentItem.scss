@@ -1,0 +1,35 @@
+.document-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  &.removed {
+    display: none;
+  }
+  .head-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .head {
+      width: fit-content;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 8px 10px;
+      border: 1px solid #555;
+      box-shadow: 0 0 4px 0 rgba($color: #000000, $alpha: 0.4);
+    }
+    .controls {
+      display: none;
+      gap: 8px;
+    }
+    &:hover {
+      .controls {
+        display: flex;
+      }
+    }
+  }
+  .body {
+    padding-left: 30px;
+  }
+}
